@@ -1,18 +1,18 @@
-import './globals.css'
-import { Inter } from 'next/font/google'
+import "./globals.css";
+import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: 'Nodewave',
-  description: 'Nodewave Landing Page',
-}
+  title: "Nodewave",
+  description: "Nodewave Landing Page",
+};
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <link rel="shortcut icon" href="/nodewave-icon.png" type="image/png" />
+      <link rel="shortcut icon" href="./nodewave-icon.png" type="image/png" />
       <body className={`${inter.className}`}>{children}</body>
     </html>
-  )
+  );
 }
