@@ -10,7 +10,7 @@ function Portfolio() {
       <h3 className="text-white text-center text-lg font-semibold">
         Start Creating Websites or Mobile Apps For You Now
       </h3>
-      <div className="mt-8 flex justify-center gap-x-5">
+      <div className="mt-8 flex flex-col md:flex-row justify-center gap-x-5 gap-y-4">
         <Card
           image={portfolio1}
           title="Website"
@@ -31,7 +31,7 @@ export default Portfolio;
 
 function Card({ title = "", image, price = 0, discount = 0 }) {
   return (
-    <div className="bg-white flex gap-0 rounded-md">
+    <div className="bg-white flex gap-0 rounded-lg mx-4 md:m-0">
       <div className="basis-1/2 flex flex-col items-center  text-black">
         <h1 className="mt-10 text-xl font-semibold">{title}</h1>
         <h3 className="text-base font-semibold mt-5">Start from</h3>

@@ -16,10 +16,10 @@ function HowWeWork() {
         How We Work
       </h3>
       <div
-        className="w-[600px] mx-auto mt-10 p-3 rounded-md flex justify-between"
+        className="w-full md:w-[600px] mx-auto mt-10 p-3 rounded-md md:flex  md:flex-row justify-between"
         style={{ backgroundImage: `url('${bg_chat.src}')` }}
       >
-        <div className="flex-none bg-white h-[380px] w-[230px] rounded-sm flex flex-col gap-y-2">
+        <div className=" md:flex-none bg-white h-[360px] max-w-[250px] md:h-fit w-[90%] mx-auto md:w-[230px] md:p-0 rounded-sm flex flex-col gap-y-2">
           <PersonChat
             text={"My name is Danny, I’m looking for profile website company"}
           />
@@ -35,7 +35,7 @@ function HowWeWork() {
             }
           />
         </div>
-        <div className="p-8">
+        <div className="p-8 text-center md:text-left">
           <h1 className="font-semibold text-white mb-5">Estimate</h1>
           <p className="text-sm text-white font-light">
             Estimate the cost of creating your application with us. Pricing is

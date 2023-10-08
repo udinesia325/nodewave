@@ -40,7 +40,7 @@ function Applications() {
       <h3 className="text-white text-lg font-semibold text-center">
         Applications that can be made
       </h3>
-      <div className="mt-10 flex gap-x-4">
+      <div className="mt-10 flex flex-col md:flex-row gap-x-4 gap-y-8 md:gap-y-0">
         <CardApp icon={list} title="Online Attendance">
           <p className="text-xs font-thin">
             With the times, your team may be able to work in the office or
@@ -107,8 +107,8 @@ export default Applications;
 
 function CardApp({ icon, title, children }) {
   return (
-    <div>
-      <div className="flex items-center gap-x-3 mb-3 ">
+    <div className="px-3">
+      <div className="flex items-center justify-center md:justify-start gap-x-3 mb-3 ">
         <Image src={icon} width={40} alt="icon" />
         <h1>{title}</h1>
       </div>

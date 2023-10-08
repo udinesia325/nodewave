@@ -10,12 +10,12 @@ function OurProducts() {
   return (
     <div className="mt-28 flex flex-col">
       <h1 className="text-xl font-semibold text-center mb-10">Our Product</h1>
-      <div className="grid grid-rows-[150px_150px] grid-cols-[340px_400px] grid-flow-col gap-4  mx-auto">
-        <div className="col-span-1 row-span-1 flex gap-x-2 justify-center items-center bg-white p-4 rounded-xl text-slate-700 relative">
-          <Image src={mobile} width={40} className="row-span-3" alt="mobile" />
+      <div className="grid grid-rows-[350px_150px_150px] md:grid-rows-[150px_150px] md:grid-cols-[340px_400px] grid-flow-col gap-4  mx-auto">
+        <div className="order-3 md:order-1 md:col-span-1 md:row-span-1 flex gap-x-2 justify-center items-center bg-white p-4 rounded-xl text-slate-700 relative">
+          <Image src={mobile}  className="row-span-3 w-[60px] md:w-[40px]" alt="mobile" />
           <div className="row-span-2 col-span-1">
-            <h1 className="text-lg font-semibold">Mobile Apps</h1>
-            <p className="w-[220px] text-xs text-slate-800 font-light">
+            <h1 className="text-2xl md:text-lg font-semibold">Mobile Apps</h1>
+            <p className="w-[220px] text-md md:text-xs text-slate-800 font-light">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
           </div>
@@ -23,19 +23,19 @@ function OurProducts() {
             src={arrow_right}
             width={20}
             alt="arrow"
-            className="absolute right-8 bottom-10 transition-all hover:scale-125"
+            className="absolute right-2 bottom-3 md:right-8 md:bottom-10 transition-all hover:scale-125"
           />
         </div>
-        <div className="col-span-1 row-span-1 flex gap-x-2 justify-center items-center  p-4 rounded-xl border scale-95 relative">
+        <div className="order-2 md:order-2 md:col-span-1 md:row-span-1 flex gap-x-2 justify-center items-center  p-4 rounded-xl border scale-95 relative">
           <Image
             src={web_design}
-            width={40}
-            className="row-span-3"
+            
+            className="row-span-3 w-[60px] md:w-[40px]"
             alt="web design"
           />
           <div className="row-span-2 col-span-1">
-            <h1 className=" text-lg font-semibold">Website</h1>
-            <p className=" w-[220px] text-xs">
+            <h1 className=" text-2xl md:text-lg font-semibold">Website</h1>
+            <p className=" w-[220px] text-md md:text-xs">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
           </div>
@@ -43,11 +43,11 @@ function OurProducts() {
             src={arrow_right}
             width={20}
             alt="arrow"
-            className="absolute right-8 bottom-10 transition-all hover:scale-125"
+            className="absolute right-2 bottom-3 md:right-8 md:bottom-10 transition-all hover:scale-125"
           />
         </div>
 
-        <div className="col-span-1 row-span-2 flex flex-col items-center bg-white text-slate-800 rounded-lg p-4">
+        <div className="order-1 md:order-3 md:col-span-1 md:row-span-2 flex flex-col items-center bg-white text-slate-800 rounded-lg p-4">
           <div className="flex gap-2 justify-center">
             {Array.from({length:3})
               .fill(0)

@@ -20,11 +20,11 @@ function Footer() {
       </p>
 
       <div className="flex gap-3 my-10">
-        <Image src={fb} width={30} alt="fb" />
-        <Image src={tw} width={30} alt="tw" />
-        <Image src={yt} width={30} alt="yt" />
-        <Image src={lk} width={30} alt="lk" />
-        <Image src={ig} width={30} alt="ig" />
+        <a href="http://www.facebook.com" target="_blank"><Image src={fb} width={30} alt="fb" /></a>
+        <a href="http://www.twitter.com" target="_blank"><Image src={tw} width={30} alt="tw" /></a>
+        <a href="http://www.youtube.com" target="_blank"><Image src={yt} width={30} alt="yt" /></a>
+        <a href="http://www.linkedin.com" target="_blank"><Image src={lk} width={30} alt="lk" /></a>
+        <a href="http://www.instagram.com" target="_blank"><Image src={ig} width={30} alt="ig" /></a>
       </div>
     </div>
   );
