@@ -6,7 +6,7 @@ import shoppingSale from "../assets/icons/shopping-sale.svg"
 
 function Portfolio() {
   return (
-    <div className="pt-10">
+    <div className="pt-10" id="portfolio">
       <h3 className="text-white text-center text-lg font-semibold">
         Start Creating Websites or Mobile Apps For You Now
       </h3>

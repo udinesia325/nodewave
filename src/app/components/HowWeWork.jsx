@@ -11,6 +11,7 @@ function HowWeWork() {
     <div
       style={{ backgroundImage: `url('${bg.src}')` }}
       className="bg-no-repeat bg-cover py-4 mt-8"
+      id="howwework"
     >
       <h3 className="text-white text-center text-lg font-semibold">
         How We Work

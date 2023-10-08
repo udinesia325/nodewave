@@ -10,28 +10,25 @@ const navbarData = [
   {
     text: "Website",
     href: "#",
-    active: false,
   },
   {
     text: "Mobile Apps",
-    href: "#",
-    active: false,
+    href: "#howwework",
   },
   {
     text: "Portfolio",
-    href: "#",
-    active: false,
+    href: "#portfolio",
   },
   {
     text: "Make an App",
     href: "#",
-    active: true,
   },
 ];
 function Navbar() {
   const { scrollY } = useScroll();
   const [open, setOpen] = useState(false);
   const [yPos, setYpos] = useState(0);
+  const [activeMenu, setActiveMenu] = useState("#");
   useMotionValueEvent(scrollY, "change", (latest) => {
     setYpos(latest);
   });
@@ -48,12 +45,12 @@ function Navbar() {
     hidden: {
       height: 0,
       paddingTop: 0,
-      paddingBottom:0
+      paddingBottom: 0,
     },
     show: {
       height: "max-content",
       paddingTop: 20,
-      paddingBottom:20,
+      paddingBottom: 20,
       transition: {
         delayChildren: 0.5,
       },
@@ -69,7 +66,9 @@ function Navbar() {
         }}
       ></motion.div>
       <div className="w-[130px] flex">
-        <Image src={nodewave} className="my-auto" alt="nodewave" />
+        <a href="#" onClick={() => setActiveMenu("#")}>
+          <Image src={nodewave} className="my-auto" alt="nodewave" />
+        </a>
       </div>
 
       {/* only on desktop */}
@@ -78,8 +77,11 @@ function Navbar() {
           <li
             key={index}
             className={`py-2 px-3 rounded-full ${
-              data.active ? "bg-primary" : ""
+              data.href == activeMenu && data.text != "Website"
+                ? "bg-primary"
+                : ""
             }`}
+            onClick={() => setActiveMenu(data.href)}
           >
             <a href={data.href}>{data.text}</a>
           </li>
@@ -119,8 +121,11 @@ function Navbar() {
           <li
             key={index}
             className={`py-2 px-3 rounded-full ${
-              data.active ? "bg-primary" : ""
+              data.href == activeMenu && data.text != "Website"
+                ? "bg-primary"
+                : ""
             }`}
+            onClick={() => setActiveMenu(data.href)}
           >
             <a href={data.href}>{data.text}</a>
           </li>
