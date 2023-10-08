@@ -50,10 +50,7 @@ function Navbar() {
     show: {
       height: "max-content",
       paddingTop: 20,
-      paddingBottom: 20,
-      transition: {
-        delayChildren: 0.5,
-      },
+      paddingBottom: 20
     },
   };
   return (
@@ -66,7 +63,10 @@ function Navbar() {
         }}
       ></motion.div>
       <div className="w-[130px] flex">
-        <a href="#" onClick={() => setActiveMenu("#")}>
+        <a href="#" onClick={() =>{
+          setActiveMenu("#")
+          setOpen(false)
+          }}>
           <Image src={nodewave} className="my-auto" alt="nodewave" />
         </a>
       </div>
