@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <link rel="shortcut icon" href="/nodewave-icon.png" type="image/png" />
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className}`}>{children}</body>
     </html>
   )
 }
