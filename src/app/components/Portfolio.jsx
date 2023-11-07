@@ -15,7 +15,7 @@ function Portfolio() {
           image={portfolio1}
           title="Website"
           price={90000}
-          discount={9200}
+          discount={85000}
         />
         <Card
           image={portfolio2}
